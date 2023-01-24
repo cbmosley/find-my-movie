@@ -1,0 +1,88 @@
+header, footer{
+    background-image: linear-gradient(to right top, #0d253f, #163c5d, #1b557c, #1d709b, #198cbb);
+    flex: content;
+    align-self: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: Verdana;
+    text-align: center;
+    color:whitesmoke;
+    padding: 10px 50px;
+    min-width: 100vh;
+    min-height: 20vh;
+
+}
+body {
+    background-image: linear-gradient(to left, #0d253f, #163c5d, #1b557c, #1d709b, #198cbb, #009dc6, #00adcf, #00bed6, #33c4c8, #56c8ba, #74ccac, #90cea1);
+    background-size: 100%;
+}
+
+
+.movie {
+    padding: 50px;
+    border: 10px rgb(205, 10, 205);
+    margin: 2px solid black;
+    /* inline-size: 100px;
+    overflow-wrap: break-word; */
+}
+
+#movie-container {
+
+    background-image: linear-gradient(to left bottom, #0d253f, #163c5d, #1b557c, #1d709b, #198cbb, #009dc6, #00adcf, #00bed6, #33c4c8, #56c8ba, #74ccac, #90cea1);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    background-size: auto;
+    border: black 50px;
+    margin: 0;
+    padding: 100px blue; 
+    
+    text-align: center;
+    font-family: Verdana;
+    
+}
+
+.poster {
+    height: 50%;
+    max-width: 50%;
+}
+
+.title {
+    font-family: Verdana;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.description {
+    font-family: Verdana;
+    font-size: large;
+    color: #C335D6;
+}
+
+.search-container{
+    display: flex;
+    justify-content: space-around;
+    background-color:#00bed6;
+}
+label {
+    font-family: Verdana;
+    font-size: large;
+}
+#search-bar {
+    min-width: 100vh;
+    min-height: 3vh;
+    color:#0D253F;
+    border-radius: 1rem;
+}
+
+button {
+    font-family: Verdana;
+    font-weight: bold;
+    color:#0D253F;
+    background-color: #90CEA1;
+    min-width: 10vh;
+    min-height: 3vh;
+    border-radius: 1rem;
+}
