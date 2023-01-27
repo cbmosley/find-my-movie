@@ -24,7 +24,7 @@ header, footer{
 
 body {
     
-    background: #33CCCC; /* Fallback */
+    background: #33CCCC; 
     animation: color 9s infinite linear;
     text-align: center;
     padding: 2em;
@@ -37,8 +37,7 @@ body {
     padding: 50px;
     border: 10px rgb(205, 10, 205);
     margin: 2px solid black;
-    /* inline-size: 100px;
-    overflow-wrap: break-word; */
+    
 }
 
 #movie-container {
