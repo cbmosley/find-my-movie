@@ -28,7 +28,7 @@ function getSearchResults(url){
         let movies = data.results;
             clearContainer(movieContainer);
         if (movies.length === 0){
-            movieContainer.innerText = "Can't find my movie!";
+            movieContainer.innerText = "Can't find my movie! Search again!";
         }
         else{
             for (let movie of movies){
