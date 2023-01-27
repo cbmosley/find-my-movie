@@ -27,8 +27,11 @@ function getSearchResults(url){
     .then(function (data){
         let movies = data.results;
             clearContainer(movieContainer);
-        console.log(movies)
-        for (let movie of movies){
+        if (movies.length === 0){
+            movieContainer.innerText = "Can't find my movie!";
+        }
+        else{
+            for (let movie of movies){
             let movieDiv = document.createElement('div');
             movieDiv.classList.add('movie');
             let moviePosterDiv = document.createElement('img');
@@ -47,7 +50,7 @@ function getSearchResults(url){
             movieContainer.appendChild(movieDiv);
 
         }
-    })
+    }})
 }
 
 function clearContainer(container){

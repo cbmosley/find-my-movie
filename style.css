@@ -6,15 +6,30 @@ header, footer{
     font-size: xx-large;
     font-family: Verdana;
     text-align: center;
-    color:whitesmoke;
-    padding: 10px 50px;
-    min-width: 100vh;
+    color:#74ccac;
+    padding: 100px 50px;
+    min-width: 100vw;
     min-height: 20vh;
 
 }
+
+@keyframes color {
+    0%   { background: #0d253f; }
+    20%  { background: #1b557c; }
+    40%  { background: #198cbb; }
+    60%  { background: #00adcf; }
+    80%  { background: #33c4c8; }
+    100% { background: #90cea1; }
+  }
+
 body {
-    background-image: linear-gradient(to left, #0d253f, #163c5d, #1b557c, #1d709b, #198cbb, #009dc6, #00adcf, #00bed6, #33c4c8, #56c8ba, #74ccac, #90cea1);
+    
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
     background-size: 100%;
+    min-width: 140vw;
 }
 
 
@@ -40,7 +55,7 @@ body {
     padding: 100px blue; 
     
     text-align: center;
-    font-family: Verdana;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 
@@ -50,35 +65,46 @@ body {
 }
 
 .title {
-    font-family: Verdana;
-    font-size: x-large;
-    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    color: black;
+    padding: 5px;
 }
 
 .description {
-    font-family: Verdana;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: large;
-    color: #C335D6;
+    color: whitesmoke;
+    padding: 5px 20px;
 }
 
-.search-container{
-    display: flex;
-    justify-content: space-around;
+
+#search-form{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color:#163c5d;
+    max-width: 50vw;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color:#00bed6;
+    max-width: 140vw;
+    max-height: 105vh;
+    padding: 20px 80px;
 }
 label {
     font-family: Verdana;
     font-size: large;
 }
 #search-bar {
-    min-width: 100vh;
+    min-width: 50vh;
     min-height: 3vh;
-    color:#0D253F;
+    color:#0b6358;
     border-radius: 1rem;
+    
 }
 
 button {
-    font-family: Verdana;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     color:#0D253F;
     background-color: #90CEA1;
